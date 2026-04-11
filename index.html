@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>RashYaps — Random thoughts that actually hit.</title>
+  <meta name="description" content="RashYaps — blogs, projects, and late-night thoughts that actually matter."/>
+  <meta property="og:title" content="RashYaps"/>
+  <meta property="og:description" content="Random thoughts that actually hit."/>
+  <meta name="theme-color" content="#0f0f13"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body data-page="index">
+
+<div id="page-veil" class="show"></div>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" aria-label="Mobile">
+  <button class="mobile-nav-close" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#reviews">Reviews</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Rash<span>Yaps</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#reviews">Reviews</a>
+      <a href="contact.html" class="nav-pill">Say hi</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-gradient"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-dot"></span>
+        Creator · Developer · Writer
+      </div>
+      <h1 class="hero-title">
+        Random thoughts<br/>that <em>actually hit.</em>
+      </h1>
+      <p class="hero-sub">
+        I make things. Write things. Think out loud. This is the quiet corner of the internet
+        where it all lives — blogs, projects, and honest reflections from late-night hours.
+      </p>
+      <div class="hero-actions">
+        <a href="blog.html" class="btn btn-primary btn-lg">Read the Blog</a>
+        <a href="#projects" class="btn btn-ghost btn-lg">Explore Work →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-num">6+</span><span class="stat-lbl">Essays written</span></div>
+        <div class="stat-item"><span class="stat-num">4</span><span class="stat-lbl">Projects live</span></div>
+        <div class="stat-item"><span class="stat-num">600+</span><span class="stat-lbl">Newsletter readers</span></div>
+        <div class="stat-item"><span class="stat-num">∞</span><span class="stat-lbl">Late nights</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TICKER ════════════════════════════════════════════ -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Writing <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Building <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Thinking <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Sharing <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Late nights <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Real thoughts <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Small communities <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Honest work <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Writing <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Building <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Thinking <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Sharing <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Late nights <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Real thoughts <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Small communities <span class="ticker-sep"></span></span>
+    <span class="ticker-item">Honest work <span class="ticker-sep"></span></span>
+  </div>
+</div>
+
+<!-- ═══ BLOG ══════════════════════════════════════════════ -->
+<section id="blog" style="background:var(--bg-surface)">
+  <div class="container">
+    <div class="section-head">
+      <div class="label reveal">Writing</div>
+      <h2 class="h2 reveal d1" style="margin-bottom:14px">Words worth staying up for</h2>
+      <p class="lead reveal d2">Thoughts on creativity, the internet, building things, and figuring life out in real time.</p>
+    </div>
+    <div class="blog-grid" id="blog-grid">
+      <div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:48px 0;font-size:14px">Loading posts…</div>
+    </div>
+    <div style="text-align:center;margin-top:48px" class="reveal">
+      <a href="blog.html" class="btn btn-ghost">View all posts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PERSONAL STRIP ═══════════════════════════════════ -->
+<div class="personal-strip">
+  <div class="personal-strip-bg"></div>
+  <div class="personal-strip-orb pso1"></div>
+  <div class="personal-strip-orb pso2"></div>
+  <div class="personal-strip-inner reveal">
+    <p class="personal-strip-quote">
+      I don't write to impress.<br/>
+      I write because I <em>can't keep things inside.</em>
+    </p>
+    <div class="personal-strip-attr">rashyaps</div>
+  </div>
+</div>
+
+<!-- ═══ UNCROSSED PATHS ══════════════════════════════════ -->
+<section id="uncrossed" style="background:var(--bg-base)">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:40px">
+      <div class="label reveal">Featured</div>
+      <h2 class="h2 reveal d1">Something worth your time</h2>
+    </div>
+    <div class="featured-card reveal">
+      <!-- Cover: swap the placeholder div for <img> when you have art -->
+      <div class="featured-cover">
+        <div class="featured-cover-orb"></div>
+        <!-- <img src="uncrossed-cover.jpg" alt="Uncrossed Paths" class="featured-cover-img" loading="lazy"/> -->
+        <div class="featured-cover-inner">
+          <div class="featured-letter">U</div>
+          <div class="featured-cover-line"></div>
+          <div class="featured-cover-label">Uncrossed Paths</div>
+        </div>
+      </div>
+      <div class="featured-body">
+        <span class="featured-badge">New long-form</span>
+        <h2 class="featured-title">Read <em>Uncrossed Paths</em></h2>
+        <p class="featured-desc">
+          A collection of thoughts about the roads not taken, the conversations that almost happened,
+          and the versions of ourselves we left behind. Quiet, honest, and a little melancholy —
+          in the best possible way.
+        </p>
+        <div class="featured-meta">
+          <span>◷ 20 min read</span>
+          <span>✦ Long-form essay</span>
+          <span>◈ Free to read</span>
+        </div>
+        <div style="margin-top:10px">
+          <a href="blog.html" class="btn btn-primary">Read Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ QUOTE ══════════════════════════════════════════════ -->
+<div class="quote-section" style="background:var(--bg-surface)">
+  <div class="quote-section-bg"></div>
+  <div class="quote-orb qo1"></div>
+  <div class="quote-orb qo2"></div>
+  <div class="quote-inner reveal">
+    <span class="quote-mark">"</span>
+    <blockquote class="quote-text">
+      Some thoughts don't need answers.<br/>
+      Just a <em>place to exist.</em>
+    </blockquote>
+    <div class="quote-attr">rashyaps</div>
+  </div>
+</div>
+
+<!-- ═══ SKILLS ════════════════════════════════════════════ -->
+<section id="skills" style="background:var(--bg-base)">
+  <div class="container">
+    <div class="section-head">
+      <div class="label reveal">Skills</div>
+      <h2 class="h2 reveal d1" style="margin-bottom:14px">What I actually know</h2>
+      <p class="lead reveal d2">The tools I reach for — built through late nights, real projects, and honest mistakes.</p>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <!-- Rendered by script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ════════════════════════════════════════════ -->
+<section id="about" style="background:var(--bg-surface)">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img">
+          <!-- <img data-src="rash-photo.jpg" alt="Rash" loading="lazy"/> -->
+          <span class="about-img-letter">R</span>
+        </div>
+        <div class="about-stat-card">
+          <div class="about-stat-num">600+</div>
+          <div class="about-stat-lbl">quiet readers</div>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="label">About</div>
+        <h2 class="h2" style="margin-bottom:24px">Making things that feel like <span class="em-purple">they matter.</span></h2>
+        <div class="about-text-body">
+          <p>Hey, I'm Rash. I'm a <strong>creator, developer, and occasional over-thinker</strong> with good Wi-Fi and a bad sleep schedule.</p>
+          <p>I build small tools, write about the internet and creativity, and try to make things that feel human in a space increasingly optimized to feel like neither.</p>
+          <p>This site is my corner. Not a brand. Not a funnel. Just a place where I put things I actually care about — and hopefully you will too.</p>
+        </div>
+        <div class="about-tags" style="margin-top:20px">
+          <span class="tag">Writing</span>
+          <span class="tag">Web Dev</span>
+          <span class="tag">Community</span>
+          <span class="tag">Indie Projects</span>
+          <span class="tag">Product Design</span>
+          <span class="tag">Late nights</span>
+        </div>
+        <div class="about-actions">
+          <a href="about.html" class="btn btn-primary">Full story →</a>
+          <a href="blog.html" class="btn btn-ghost">Read my writing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ══════════════════════════════════════════ -->
+<section id="projects" style="background:var(--bg-base)">
+  <div class="container">
+    <div class="section-head">
+      <div class="label reveal">Projects</div>
+      <h2 class="h2 reveal d1" style="margin-bottom:14px">Things I actually built</h2>
+      <p class="lead reveal d2">Small products, tools, and experiments — each one solving a problem I had and hoped others had too.</p>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ════════════════════════════════════════ -->
+<section id="experience" style="background:var(--bg-surface)">
+  <div class="container">
+    <div class="section-head">
+      <div class="label reveal">Journey</div>
+      <h2 class="h2 reveal d1" style="margin-bottom:14px">How I got here</h2>
+      <p class="lead reveal d2">Not a resume. A story. Each step taught me something the previous one couldn't.</p>
+    </div>
+    <div class="timeline" id="experience-timeline">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ═══════════════════════════════════════════ -->
+<section id="reviews" style="background:var(--bg-base)">
+  <div class="container">
+    <div class="section-head">
+      <div class="label reveal">Reviews</div>
+      <h2 class="h2 reveal d1" style="margin-bottom:14px">What people actually say</h2>
+      <p class="lead reveal d2">Honest words from real people — no paid testimonials.</p>
+    </div>
+    <div class="reviews-grid" id="reviews-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SUPPORT ════════════════════════════════════════════ -->
+<section id="support" style="background:var(--bg-surface)">
+  <div class="container">
+    <div class="section-head" style="text-align:center;max-width:500px;margin:0 auto 52px">
+      <div class="label reveal" style="justify-content:center">Support</div>
+      <h2 class="h2 reveal d1" style="margin-bottom:12px">If you like what I do,<br/>you can <span class="em-pink">support me.</span></h2>
+      <p class="lead reveal d2" style="max-width:100%;margin:0 auto">Everything here is free. If something helped or moved you, consider buying me a coffee — or just share a post. That works too.</p>
+    </div>
+    <div class="support-grid">
+      <!-- Coffee -->
+      <div class="card support-card coffee reveal">
+        <div class="support-icon">☕</div>
+        <h3 class="support-title">Buy Me a Coffee</h3>
+        <p class="support-desc">Keep the late nights going. A coffee goes a long way when you're writing at 2 AM for no reason other than that it feels right.</p>
+        <button class="btn btn-coffee" id="coffee-btn">☕ Buy me a coffee</button>
+      </div>
+      <!-- UPI -->
+      <div class="card support-card upi reveal d2">
+        <div class="support-icon">🇮🇳</div>
+        <h3 class="support-title">UPI Payment</h3>
+        <p class="support-desc">If you're in India, UPI is the easiest way. Opens GPay, PhonePe, or any UPI app directly. Any amount is genuinely appreciated.</p>
+        <!-- Deep link — works on mobile, opens UPI app -->
+        <div class="upi-row" data-copy="rashyaps@upi" title="Tap to copy UPI ID">
+          <span>rashyaps@upi</span>
+          <span class="upi-copy-lbl">tap to copy</span>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="upi://pay?pa=rashyaps@upi&pn=RashYaps&cu=INR" class="btn btn-upi" id="upi-pay-btn">
+            🇮🇳 Open UPI App
+          </a>
+        </div>
+        <p style="font-size:11.5px;color:var(--text-muted);margin-top:10px;line-height:1.6">
+          Works on mobile. On desktop, copy the UPI ID above and paste in your app.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWSLETTER ════════════════════════════════════════ -->
+<section id="newsletter" style="background:var(--bg-base)">
+  <div class="container">
+    <div class="newsletter-box reveal">
+      <div class="newsletter-text">
+        <div class="label" style="margin-bottom:14px">Newsletter</div>
+        <h3 class="h3" style="margin-bottom:10px">Stay close. No spam.<br/>Just real stuff.</h3>
+        <p style="font-size:15px;color:var(--text-secondary)">Monthly-ish. Honest thoughts, useful links, and things I'm building. 600+ readers.</p>
+      </div>
+      <form class="newsletter-form" id="nl-form">
+        <input type="email" class="input-base input-pill" placeholder="your@email.com" required aria-label="Email"/>
+        <button type="submit" class="btn btn-primary" style="white-space:nowrap">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══════════════════════════════════════════ -->
+<section id="contact" style="background:var(--bg-surface)">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-lead reveal">
+        <div class="label">Contact</div>
+        <h2>Let's talk about <em>something real.</em></h2>
+        <p>Reach out for freelance projects, collabs, or just because something I wrote resonated. I reply to everything genuine.</p>
+        <div class="socials-list">
+          <a href="https://youtube.com/@RashYaps" class="social-row" target="_blank" rel="noopener"><span class="social-ic">▶</span>@RashYaps on YouTube</a>
+          <a href="https://instagram.com/RashYaps" class="social-row" target="_blank" rel="noopener"><span class="social-ic">◎</span>@RashYaps on Instagram</a>
+          <a href="https://twitter.com/RashYaps" class="social-row" target="_blank" rel="noopener"><span class="social-ic">𝕏</span>@RashYaps on X / Twitter</a>
+          <a href="https://discord.gg/RashYaps" class="social-row" target="_blank" rel="noopener"><span class="social-ic">◈</span>Join the Discord</a>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <form class="contact-form-area" id="cf-form">
+          <div class="field"><label for="cf-name">Name</label><input type="text" id="cf-name" class="input-base" placeholder="Your name" required/></div>
+          <div class="field"><label for="cf-email">Email</label><input type="email" id="cf-email" class="input-base" placeholder="your@email.com" required/></div>
+          <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" class="input-base" placeholder="What's on your mind?" required></textarea></div>
+          <div class="form-notice" id="cf-msg" role="alert"></div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <a href="index.html" class="footer-logo">Rash<span>Yaps</span></a>
+    <p class="footer-copy">© 2025 RashYaps. Made with care in the late hours.</p>
+    <div class="footer-socials">
+      <a href="https://youtube.com/@RashYaps" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="https://instagram.com/RashYaps" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://twitter.com/RashYaps" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://discord.gg/RashYaps" target="_blank" rel="noopener" aria-label="Discord">◈</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

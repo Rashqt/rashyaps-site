@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Post — RashYaps</title>
+  <meta name="description" content="Read this post on RashYaps."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body data-page="post">
+
+<div id="page-veil" class="show"></div>
+
+<nav class="mobile-nav" aria-label="Mobile">
+  <button class="mobile-nav-close" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Rash<span>Yaps</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="contact.html" class="nav-pill">Say hi</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="post-wrap">
+  <div class="post-col">
+    <a href="blog.html" class="post-back reveal">← Back to all posts</a>
+
+    <!-- Post content rendered by JS -->
+    <div id="post-area" class="reveal d1">
+      <div style="text-align:center;padding:80px 0;color:var(--text-muted)">
+        <div style="font-size:32px;margin-bottom:12px;opacity:0.4">◌</div>
+        <p style="font-size:14px">Loading post…</p>
+      </div>
+    </div>
+
+    <!-- Comments -->
+    <div class="comments-area">
+      <div class="comments-hdr">
+        <h2 class="comments-title">Comments</h2>
+        <span class="comments-count-badge" id="comments-count-badge">—</span>
+      </div>
+
+      <form class="comment-form-card" id="comment-form">
+        <p class="cf-label">Leave a thought</p>
+        <div class="cf-row">
+          <input type="text" id="c-name" class="input-base" placeholder="Your name" required/>
+          <input type="email" id="c-email" class="input-base" placeholder="Email (not shown)"/>
+        </div>
+        <textarea id="c-message" class="input-base" rows="3" placeholder="What did this make you think?" required></textarea>
+        <button type="submit" class="btn btn-outline btn-sm" style="align-self:flex-start">Post comment →</button>
+      </form>
+
+      <div class="comment-list" id="comment-list"></div>
+    </div>
+
+    <!-- Nav -->
+    <div style="display:flex;justify-content:space-between;padding:44px 0;border-top:1px solid var(--border);margin-top:8px;gap:14px;flex-wrap:wrap">
+      <a href="blog.html" class="btn btn-ghost btn-sm">← All posts</a>
+      <a href="contact.html" class="btn btn-outline btn-sm">Get in touch</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <a href="index.html" class="footer-logo">Rash<span>Yaps</span></a>
+    <p class="footer-copy">© 2025 RashYaps. Made with care in the late hours.</p>
+    <div class="footer-socials">
+      <a href="https://youtube.com/@RashYaps" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="https://instagram.com/RashYaps" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://twitter.com/RashYaps" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://discord.gg/RashYaps" target="_blank" rel="noopener" aria-label="Discord">◈</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

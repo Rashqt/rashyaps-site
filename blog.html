@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Blog — RashYaps</title>
+  <meta name="description" content="Essays and thoughts from RashYaps on creativity, the internet, and building things that matter."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body data-page="blog">
+
+<div id="page-veil" class="show"></div>
+
+<nav class="mobile-nav" aria-label="Mobile">
+  <button class="mobile-nav-close" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="index.html#projects">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Rash<span>Yaps</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="contact.html" class="nav-pill">Say hi</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="blog-page-wrap">
+  <div class="blog-page-hero">
+    <div class="container">
+      <div class="label reveal" style="justify-content:center;margin-bottom:18px">Writing</div>
+      <h1 class="h2 reveal d1" style="text-align:center;font-size:clamp(30px,5vw,54px);margin-bottom:14px">
+        Words worth staying up for
+      </h1>
+      <p class="lead reveal d2" style="text-align:center;margin:0 auto 44px">
+        Essays on creativity, the internet, building things, and figuring it all out. Read at your own pace.
+      </p>
+      <div class="filter-row reveal d3">
+        <button class="filter-pill active" data-filter="all">All posts</button>
+        <button class="filter-pill" data-filter="thoughts">Thoughts</button>
+        <button class="filter-pill" data-filter="creative">Creative</button>
+        <button class="filter-pill" data-filter="growth">Growth</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-bottom:108px">
+    <div class="blog-grid" id="blog-list-grid">
+      <div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:60px 0;font-size:14px">Loading posts…</div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <a href="index.html" class="footer-logo">Rash<span>Yaps</span></a>
+    <p class="footer-copy">© 2025 RashYaps. Made with care in the late hours.</p>
+    <div class="footer-socials">
+      <a href="https://youtube.com/@RashYaps" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="https://instagram.com/RashYaps" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://twitter.com/RashYaps" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://discord.gg/RashYaps" target="_blank" rel="noopener" aria-label="Discord">◈</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

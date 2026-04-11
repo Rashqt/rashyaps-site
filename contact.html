@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact — RashYaps</title>
+  <meta name="description" content="Reach out to RashYaps — collaborations, freelance work, or just something worth saying."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body data-page="contact">
+
+<div id="page-veil" class="show"></div>
+
+<nav class="mobile-nav" aria-label="Mobile">
+  <button class="mobile-nav-close" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="index.html#projects">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Rash<span>Yaps</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="contact.html" class="nav-pill">Say hi</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="contact-page-wrap">
+
+  <!-- ═══ HERO ═══════════════════════════════════════════════ -->
+  <div class="cp-hero">
+    <div class="cp-hero-orb cpo1"></div>
+    <div class="cp-hero-orb cpo2"></div>
+    <div class="container cp-hero-inner">
+      <div class="label reveal" style="margin-bottom:16px">Contact</div>
+      <h1 class="reveal d1">Let's talk about <em>something real.</em></h1>
+      <p class="reveal d2">Whether it's a project, a collab, or just something you read and wanted to share — I reply to everything that feels genuine. No templates, no bots.</p>
+      <div class="cp-meta reveal d3">
+        <div class="cp-meta-item">
+          <span class="cp-meta-label">Response time</span>
+          <span class="cp-meta-value">Usually within 48h</span>
+        </div>
+        <div style="width:1px;background:var(--border)"></div>
+        <div class="cp-meta-item">
+          <span class="cp-meta-label">Open for</span>
+          <span class="cp-meta-value">Freelance · Collabs · Conversations</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ MAIN ════════════════════════════════════════════════ -->
+  <div class="container cp-main">
+
+    <!-- Form -->
+    <div class="reveal">
+      <div class="cp-form-card">
+        <h2>Send a message</h2>
+        <form class="contact-form-area" id="cp-contact-form" style="gap:16px">
+          <div class="field">
+            <label for="cp-name">Your name</label>
+            <input type="text" id="cp-name" class="input-base" placeholder="How should I call you?" required/>
+          </div>
+          <div class="field">
+            <label for="cp-email">Email</label>
+            <input type="email" id="cp-email" class="input-base" placeholder="your@email.com" required/>
+          </div>
+          <div class="field">
+            <label for="cp-subject">Subject <span style="color:var(--text-muted);font-size:11px">(optional)</span></label>
+            <input type="text" id="cp-subject" class="input-base" placeholder="What's this about?"/>
+          </div>
+          <div class="field">
+            <label for="cp-message">Message</label>
+            <textarea id="cp-message" class="input-base" rows="6" placeholder="Write freely. This is a real inbox." required></textarea>
+          </div>
+          <div class="form-notice" id="cp-contact-msg" role="alert"></div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send it →</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Aside -->
+    <div class="cp-aside reveal d2">
+
+      <!-- Socials -->
+      <div class="aside-card">
+        <h3>Find me online</h3>
+        <p>Most active on X and YouTube. Discord is where the community hangs.</p>
+        <div class="aside-social-list">
+          <a href="https://youtube.com/@RashYaps" class="asl-row" target="_blank" rel="noopener"><span class="asl-ic">▶</span>YouTube — @RashYaps</a>
+          <a href="https://instagram.com/RashYaps" class="asl-row" target="_blank" rel="noopener"><span class="asl-ic">◎</span>Instagram — @RashYaps</a>
+          <a href="https://twitter.com/RashYaps" class="asl-row" target="_blank" rel="noopener"><span class="asl-ic">𝕏</span>Twitter / X — @RashYaps</a>
+          <a href="https://discord.gg/RashYaps" class="asl-row" target="_blank" rel="noopener"><span class="asl-ic">◈</span>Discord — Join the server</a>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div class="aside-card">
+        <h3>Support the work</h3>
+        <p>If something I made helped you, a coffee or UPI goes a long way.</p>
+        <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+          <a href="https://buymeacoffee.com/rashyaps" target="_blank" rel="noopener" class="btn btn-coffee btn-sm">☕ Buy me a coffee</a>
+        </div>
+        <div class="upi-row" style="margin-top:12px" data-copy="rashyaps@upi" title="Tap to copy UPI ID">
+          <span style="font-family:'Courier New',monospace;font-size:13px">rashyaps@upi</span>
+          <span class="upi-copy-lbl">tap to copy</span>
+        </div>
+        <!-- UPI deep link for mobile -->
+        <a href="upi://pay?pa=rashyaps@upi&pn=RashYaps&cu=INR" class="btn btn-upi btn-sm" style="margin-top:10px;display:inline-flex">🇮🇳 Open UPI App</a>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="aside-card">
+        <h3>Join the newsletter</h3>
+        <p>Monthly-ish. Real thoughts. No spam. 600+ quiet readers.</p>
+        <form style="display:flex;flex-direction:column;gap:9px;margin-top:14px" id="cp-newsletter-form">
+          <input type="email" class="input-base" placeholder="your@email.com" required/>
+          <button type="submit" class="btn btn-outline btn-sm" style="align-self:flex-start">Subscribe →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ FAQ ═════════════════════════════════════════════════ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal">FAQ</div>
+        <h2 class="h2 reveal d1" style="margin-bottom:14px">Common questions</h2>
+        <p class="lead reveal d2">The things people usually wonder before reaching out.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="card faq-card reveal"><p class="faq-q">Do you take freelance projects?</p><p class="faq-a">Yes — mostly web dev, personal brand sites, and design-adjacent work. I'm selective but happy to hear what you're building.</p></div>
+        <div class="card faq-card reveal d1"><p class="faq-q">Can I republish or share your writing?</p><p class="faq-a">Sharing is always welcome — just credit RashYaps and link back. For republishing elsewhere, reach out first and I'll almost certainly say yes.</p></div>
+        <div class="card faq-card reveal d2"><p class="faq-q">Do you collaborate with other creators?</p><p class="faq-a">Yes, if the work feels aligned and genuine. I'm not interested in collab-for-reach — but if you're making something real, let's talk.</p></div>
+        <div class="card faq-card reveal d3"><p class="faq-q">How quickly do you respond?</p><p class="faq-a">Usually within 48 hours. Sometimes longer if I'm deep in a project. I always reply to genuine messages — just give it a couple of days.</p></div>
+        <div class="card faq-card reveal d1"><p class="faq-q">Are you open to writing commissions?</p><p class="faq-a">Occasionally — depends entirely on the topic. I don't write content I wouldn't put my name on proudly. Reach out with what you have in mind.</p></div>
+        <div class="card faq-card reveal d2"><p class="faq-q">What's the Discord community like?</p><p class="faq-a">Small, calm, and intentional. Conversations about creativity, building things, and the internet — without the performance of most online spaces.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <a href="index.html" class="footer-logo">Rash<span>Yaps</span></a>
+    <p class="footer-copy">© 2025 RashYaps. Made with care in the late hours.</p>
+    <div class="footer-socials">
+      <a href="https://youtube.com/@RashYaps" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="https://instagram.com/RashYaps" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://twitter.com/RashYaps" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://discord.gg/RashYaps" target="_blank" rel="noopener" aria-label="Discord">◈</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
