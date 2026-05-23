@@ -1,73 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>About — RashYaps</title>
-  <meta name="description" content="The story behind RashYaps — who Rash is, the journey, and what this space is really about."/>
+  <title>About — Rashqyiiiiee</title>
+  <meta name="description" content="The story behind Rashqyiiiiee — who Rash is, the journey, and what this space is really about."/>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 </head>
 <body data-page="about">
 
+<div id="loader" aria-hidden="true">
+  <div class="loader-name">Rashqyiiiiee</div>
+  <div class="loader-bar"></div>
+</div>
 <div id="page-veil" class="show"></div>
+<div id="theme-veil"></div>
+<div class="grain-layer" aria-hidden="true"></div>
 
-<nav class="mobile-nav" aria-label="Mobile">
-  <button class="mobile-nav-close" aria-label="Close">✕</button>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <button class="mob-close" aria-label="Close">✕</button>
   <a href="index.html">Home</a>
   <a href="blog.html">Blog</a>
   <a href="about.html">About</a>
-  <a href="index.html#projects">Projects</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <header class="navbar">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">Rash<span>Yaps</span></a>
+    <a href="index.html" class="nav-logo">Rashqyiiiiee</a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
       <a href="about.html">About</a>
       <a href="index.html#projects">Projects</a>
-      <a href="index.html#experience">Experience</a>
-      <a href="index.html#reviews">Reviews</a>
       <a href="contact.html" class="nav-pill">Say hi</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-right">
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+        <span class="theme-btn-icon" id="theme-icon">🌙</span>
+      </button>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <main class="about-page">
 
-  <!-- ═══ HERO ══════════════════════════════════════════════ -->
-  <section class="about-hero-section">
-    <div class="ah-orb ah-orb1"></div>
-    <div class="ah-orb ah-orb2"></div>
+  <!-- ══ HERO ════════════════════════════════════════════════ -->
+  <section class="about-hero-sec">
+    <div class="ah-orb ah1" aria-hidden="true"></div>
+    <div class="ah-orb ah2" aria-hidden="true"></div>
     <div class="container">
       <div class="about-hero-grid">
+
+        <!-- Portrait — add your photo here -->
         <div class="about-portrait reveal">
-          <!-- Swap this for <img src="rash.jpg" alt="Rash" loading="lazy"/> when you have a photo -->
-          <span class="ap-letter">R</span>
+          <!--
+            📷 ADD YOUR PHOTO HERE:
+            Remove the placeholder letter and uncomment:
+            <img src="your-photo.jpg" alt="Rash" loading="lazy"/>
+          -->
+          <span class="ap-letter" aria-hidden="true">R</span>
         </div>
+
         <div class="about-intro reveal d2">
-          <div class="label" style="margin-bottom:16px">About me</div>
-          <h1 class="h1" style="margin-bottom:18px">Hey. I'm Rash.<br/>I make things <span class="em-blue">that matter.</span></h1>
-          <p class="lede-italic">
+          <div class="lbl" style="margin-bottom:16px">About me</div>
+          <h1 class="h1" style="margin-bottom:20px">
+            Hey. I'm Rash.<br/>
+            I make things <span class="em-blue">that matter.</span>
+          </h1>
+          <p class="lede-i">
             I'm a Gen Z creator, developer, and writer who spends too many nights making things
             that don't fit into any one category — and has stopped trying to make them fit.
           </p>
-          <p>
-            <strong>This site is my corner of the internet.</strong> Not curated for an algorithm.
-            Not optimized for impressions. Just the closest thing I have to a creative home — where
-            my blogs, projects, and late-night thoughts live together in one place.
+          <p style="font-size:15px;color:var(--text-s);line-height:1.9;margin-top:4px">
+            <strong style="color:var(--text-p);font-weight:500">This space is my corner of the internet.</strong>
+            Not curated for an algorithm. Not optimized for impressions. Just a creative home where
+            my blogs, projects, and late-night thoughts live together.
           </p>
-          <p>
-            I care about making things that feel <strong>human, honest, and a little slow</strong>
-            in a world that's moving too fast and forgetting why any of it matters.
+          <p style="font-size:15px;color:var(--text-s);line-height:1.9">
+            I care about making things that feel
+            <strong style="color:var(--text-p);font-weight:500">human, honest, and a little slow</strong>
+            in a world that's moving too fast.
           </p>
-          <div class="about-actions" style="margin-top:32px">
-            <a href="blog.html" class="btn btn-primary">Read my writing</a>
+          <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
+            <a href="blog.html" class="btn btn-primary">Read the blog</a>
             <a href="contact.html" class="btn btn-ghost">Say hello</a>
           </div>
         </div>
@@ -75,101 +96,127 @@
     </div>
   </section>
 
-  <!-- ═══ STORY ══════════════════════════════════════════════ -->
-  <section class="story-section" style="padding:100px 0">
+  <!-- ══ STORY ════════════════════════════════════════════════ -->
+  <section style="background:var(--bg-surface);padding:100px 0">
     <div class="container">
       <div class="section-head">
-        <div class="label reveal">Story</div>
+        <div class="lbl reveal">Story</div>
         <h2 class="h2 reveal d1" style="margin-bottom:14px">How I got here</h2>
-        <p class="lead reveal d2">Not a timeline. A set of turning points — the moments that made things click.</p>
+        <p class="lead reveal d2">Not a timeline. A set of turning points.</p>
       </div>
       <div class="story-layout">
         <nav class="story-nav" aria-label="Story chapters">
-          <div class="sn-item on" data-target="ch-start">The beginning</div>
-          <div class="sn-item" data-target="ch-code">Learning to code</div>
-          <div class="sn-item" data-target="ch-create">Creating publicly</div>
-          <div class="sn-item" data-target="ch-now">Where I am now</div>
+          <div class="sn-item on"  data-target="ch-start">The beginning</div>
+          <div class="sn-item"     data-target="ch-code">Learning to code</div>
+          <div class="sn-item"     data-target="ch-create">Creating publicly</div>
+          <div class="sn-item"     data-target="ch-now">Where I am now</div>
         </nav>
         <div class="story-body">
+
           <div class="story-chapter reveal" id="ch-start">
-            <h3 class="story-ch-title">The beginning — a desk and a dream</h3>
-            <div class="story-ch-body">
+            <h3 class="sc-title">The beginning — a desk and a dream</h3>
+            <div class="sc-body">
               <p>I didn't have a plan. I had a laptop, a bad internet connection, and a genuinely embarrassing number of YouTube tabs open. I was trying to figure out what I wanted to make — not what I <strong>should</strong> make. What I <strong>wanted</strong> to make.</p>
               <p>There's a difference most people skip past. "Should" is about external validation. "Want" is about internal pull. I spent a long time in "should" before I found my way back to "want."</p>
-              <p>This space is the result of following the pull. It's messier and quieter than most content out there. I think that's why it resonates with certain people — the ones who are also still figuring things out and would rather do that honestly than pretend they've already arrived.</p>
+              <p>This space is the result of following the pull. It's messier and quieter than most content out there — and that's exactly why it feels like something worth staying in.</p>
             </div>
           </div>
+
           <div class="story-chapter reveal" id="ch-code">
-            <h3 class="story-ch-title">Learning to code — out of frustration</h3>
-            <div class="story-ch-body">
+            <h3 class="sc-title">Learning to code — out of frustration</h3>
+            <div class="sc-body">
               <p>I didn't start learning web development because I wanted to be a developer. I started because I had ideas I couldn't execute. I'd look at websites that felt wrong and think: <strong>I could do that better.</strong> But I couldn't — yet.</p>
               <p>So I opened a YouTube tutorial at 11 PM. Then another. Then another. By 3 AM I had a terrible-looking webpage that was entirely mine. That feeling — of making something that didn't exist before — is the reason I kept going.</p>
-              <p>The technical skills followed. HTML to CSS to JavaScript to React to backend things I still find a little terrifying. But the underlying motivation was always the same: build what you imagine, not just imagine it.</p>
+              <p>HTML to CSS to JavaScript to React to backend things I still find a little terrifying. But the underlying motivation was always the same: build what you imagine, not just imagine it.</p>
             </div>
           </div>
+
           <div class="story-chapter reveal" id="ch-create">
-            <h3 class="story-ch-title">Creating publicly — terrifying, necessary</h3>
-            <div class="story-ch-body">
-              <p>The first thing I put out publicly was bad. Not catastrophically bad — just clearly the work of someone who hadn't done it before. I almost deleted it the morning after I posted it.</p>
-              <p>I didn't. And that was one of the better decisions I've made. Not because the work was secretly great — it wasn't. But because leaving it up meant I had to <strong>live with it, learn from it, and do better next time.</strong></p>
+            <h3 class="sc-title">Creating publicly — terrifying, necessary</h3>
+            <div class="sc-body">
+              <p>The first thing I put out publicly was bad. Not catastrophically bad — just clearly the work of someone who hadn't done it before. I almost deleted it the morning after.</p>
+              <p>I didn't. And that was one of the better decisions I've made. Because leaving it up meant I had to <strong>live with it, learn from it, and do better next time.</strong></p>
               <p>That's the uncomfortable truth about learning in public: it exposes you before you're ready. But waiting until you're ready has a catch. You never feel ready. You just eventually run out of reasons not to start.</p>
-              <p>So I started. I kept going. And gradually, without noticing exactly when it happened, I became someone who actually knew how to make things people wanted to read and use.</p>
             </div>
           </div>
+
           <div class="story-chapter reveal" id="ch-now">
-            <h3 class="story-ch-title">Where I am now — building slowly</h3>
-            <div class="story-ch-body">
-              <p>Right now, I'm somewhere in the middle. Not at the beginning, not at some destination. Just in the work — building things that interest me, writing when I have something worth saying, sharing with a small community of people who seem to get it.</p>
-              <p>The newsletter has 600+ readers. The blog has posts that have made strangers feel less alone at 2 AM. The projects are small but real. And I'm slowly getting better at the thing that matters most to me: <strong>making work that actually lands.</strong></p>
+            <h3 class="sc-title">Where I am now — building slowly</h3>
+            <div class="sc-body">
+              <p>Right now, I'm somewhere in the middle. Not at the beginning, not at a destination. Just in the work — building things that interest me, writing when I have something worth saying, sharing with a small community who seem to get it.</p>
+              <p>The newsletter has 600+ readers. The blog has posts that have made strangers feel less alone at 2 AM. The projects are small but real. And I'm slowly getting better at the thing that matters most: <strong>making work that actually lands.</strong></p>
               <p>If you're reading this, you're part of the reason it's worth continuing. Thank you for being here.</p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ SKILLS ════════════════════════════════════════════ -->
+  <!-- ══ SKILLS ═══════════════════════════════════════════════ -->
   <section style="background:var(--bg-base);padding:100px 0">
     <div class="container">
       <div class="section-head">
-        <div class="label reveal">Skills</div>
+        <div class="lbl reveal">Skills</div>
         <h2 class="h2 reveal d1" style="margin-bottom:14px">What I actually know</h2>
         <p class="lead reveal d2">Built through late nights, real projects, and honest mistakes.</p>
       </div>
-      <div class="skills-grid" id="skills-grid-about">
-        <!-- Rendered by JS -->
-      </div>
+      <div class="skills-grid" id="skills-grid-about"><!-- JS renders --></div>
     </div>
   </section>
 
-  <!-- ═══ VALUES ════════════════════════════════════════════ -->
+  <!-- ══ VALUES ═══════════════════════════════════════════════ -->
   <section style="background:var(--bg-surface);padding:100px 0">
     <div class="container">
       <div class="section-head">
-        <div class="label reveal">Values</div>
+        <div class="lbl reveal">Values</div>
         <h2 class="h2 reveal d1" style="margin-bottom:14px">What I actually believe</h2>
         <p class="lead reveal d2">The things I keep coming back to, even when they're inconvenient.</p>
       </div>
       <div class="values-grid">
-        <div class="card value-card reveal"><div class="val-num">01</div><h3 class="val-title">Honesty over polish</h3><p class="val-desc">A rough truth is more valuable than a smooth performance. I'd rather say something real than something impressive.</p></div>
-        <div class="card value-card reveal d1"><div class="val-num">02</div><h3 class="val-title">Quality over consistency</h3><p class="val-desc">I'd rather post once when something is ready than ten times to fill a schedule. Rhythm matters more than frequency.</p></div>
-        <div class="card value-card reveal d2"><div class="val-num">03</div><h3 class="val-title">Small but real</h3><p class="val-desc">A hundred people who genuinely connect with your work is worth more than ten thousand passive impressions.</p></div>
-        <div class="card value-card reveal d3"><div class="val-num">04</div><h3 class="val-title">Human-first design</h3><p class="val-desc">Everything I build should feel like it was made by a person who cares, not a system that optimizes.</p></div>
-        <div class="card value-card reveal d4"><div class="val-num">05</div><h3 class="val-title">Quiet ambition</h3><p class="val-desc">I don't need to broadcast the work before it's done. The building matters more than the announcement.</p></div>
-        <div class="card value-card reveal d1"><div class="val-num">06</div><h3 class="val-title">Always learning</h3><p class="val-desc">Growth shared is growth compounded — for everyone involved. I'd rather be visibly learning than invisibly stagnant.</p></div>
+        <div class="card card-p val-card reveal">
+          <div class="val-num">01</div>
+          <h3 class="val-title">Honesty over polish</h3>
+          <p class="val-desc">A rough truth is more valuable than a smooth performance.</p>
+        </div>
+        <div class="card card-p val-card reveal d1">
+          <div class="val-num">02</div>
+          <h3 class="val-title">Quality over consistency</h3>
+          <p class="val-desc">Rhythm matters more than frequency. Post when something's ready.</p>
+        </div>
+        <div class="card card-p val-card reveal d2">
+          <div class="val-num">03</div>
+          <h3 class="val-title">Small but real</h3>
+          <p class="val-desc">A hundred people who genuinely connect beats ten thousand passive impressions.</p>
+        </div>
+        <div class="card card-p val-card reveal d3">
+          <div class="val-num">04</div>
+          <h3 class="val-title">Human-first design</h3>
+          <p class="val-desc">Everything I build should feel made by a person who cares.</p>
+        </div>
+        <div class="card card-p val-card reveal d4">
+          <div class="val-num">05</div>
+          <h3 class="val-title">Quiet ambition</h3>
+          <p class="val-desc">The building matters more than the announcement of the building.</p>
+        </div>
+        <div class="card card-p val-card reveal d1">
+          <div class="val-num">06</div>
+          <h3 class="val-title">Always learning</h3>
+          <p class="val-desc">I'd rather be visibly learning than invisibly stagnant.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ CTA ════════════════════════════════════════════════ -->
+  <!-- ══ CTA ══════════════════════════════════════════════════ -->
   <section style="background:var(--bg-base);padding:80px 0">
     <div class="container">
       <div class="newsletter-box reveal">
-        <div class="newsletter-text">
-          <div class="label" style="margin-bottom:14px">Let's connect</div>
+        <div style="flex:1">
+          <div class="lbl" style="margin-bottom:14px">Let's connect</div>
           <h3 class="h3" style="margin-bottom:10px">Want to reach out?</h3>
-          <p style="font-size:15px;color:var(--text-secondary)">Whether it's a collaboration, a project, or just to say something real — I read everything.</p>
+          <p style="font-size:15px;color:var(--text-s)">Whether it's a collaboration, a project, or just something real — I read everything.</p>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
           <a href="contact.html" class="btn btn-primary">Send a message →</a>
@@ -183,13 +230,13 @@
 
 <footer class="site-footer">
   <div class="container footer-row">
-    <a href="index.html" class="footer-logo">Rash<span>Yaps</span></a>
-    <p class="footer-copy">© 2025 RashYaps. Made with care in the late hours.</p>
-    <div class="footer-socials">
-      <a href="https://youtube.com/@RashYaps" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
-      <a href="https://instagram.com/RashYaps" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
-      <a href="https://twitter.com/RashYaps" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
-      <a href="https://discord.gg/RashYaps" target="_blank" rel="noopener" aria-label="Discord">◈</a>
+    <a href="index.html" class="footer-logo">Rashqyiiiiee</a>
+    <p class="footer-copy">© 2025 Rashqyiiiiee. Made with care in the late hours.</p>
+    <div class="footer-soc">
+      <a href="https://youtube.com/@Rashqyiiiiee"  target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="https://instagram.com/Rashqyiiiiee" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://twitter.com/Rashqyiiiiee"   target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://discord.gg/Rashqyiiiiee"    target="_blank" rel="noopener" aria-label="Discord">◈</a>
     </div>
   </div>
 </footer>
