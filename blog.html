@@ -1,78 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Blog — RashYaps</title>
-  <meta name="description" content="Essays and thoughts from RashYaps on creativity, the internet, and building things that matter."/>
+  <title>RashYaps — Random thoughts that actually hit.</title>
+  <meta name="description" content="RashYaps blog — thoughts, anime, coding, stories, and late-night ideas."/>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 </head>
 <body data-page="blog">
 
+<div id="loader" aria-hidden="true">
+  <div class="loader-name">RashYaps</div>
+  <div class="loader-bar"></div>
+</div>
 <div id="page-veil" class="show"></div>
+<div id="theme-veil"></div>
+<div class="grain-layer" aria-hidden="true"></div>
 
-<nav class="mobile-nav" aria-label="Mobile">
-  <button class="mobile-nav-close" aria-label="Close">✕</button>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <button class="mob-close" aria-label="Close">✕</button>
   <a href="index.html">Home</a>
   <a href="blog.html">Blog</a>
   <a href="about.html">About</a>
-  <a href="index.html#projects">Projects</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <header class="navbar">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">Rash<span>Yaps</span></a>
+    <a href="index.html" class="nav-logo">Rashqyiiiiee</a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
       <a href="about.html">About</a>
       <a href="index.html#projects">Projects</a>
-      <a href="index.html#experience">Experience</a>
-      <a href="index.html#reviews">Reviews</a>
       <a href="contact.html" class="nav-pill">Say hi</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-right">
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+        <span class="theme-btn-icon" id="theme-icon">🌙</span>
+      </button>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <main class="blog-page-wrap">
-  <div class="blog-page-hero">
-    <div class="container">
-      <div class="label reveal" style="justify-content:center;margin-bottom:18px">Writing</div>
-      <h1 class="h2 reveal d1" style="text-align:center;font-size:clamp(30px,5vw,54px);margin-bottom:14px">
-        Words worth staying up for
+
+  <!-- ══ BLOG HERO ═══════════════════════════════════════════ -->
+  <div class="blog-hero">
+    <div class="blog-hero-orb bho1" aria-hidden="true"></div>
+    <div class="blog-hero-orb bho2" aria-hidden="true"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="rashyaps-badge reveal">
+        <span>✦</span> RashYaps
+      </div>
+      <h1 class="h2 reveal d1" style="font-size:clamp(28px,5vw,52px);margin-bottom:12px;text-align:center">
+        Random thoughts that actually hit.
       </h1>
-      <p class="lead reveal d2" style="text-align:center;margin:0 auto 44px">
-        Essays on creativity, the internet, building things, and figuring it all out. Read at your own pace.
+      <p class="lead reveal d2" style="text-align:center;margin:0 auto 40px;max-width:480px">
+        Thoughts on the internet, anime, coding, and staying up too late thinking about things.
       </p>
-      <div class="filter-row reveal d3">
-        <button class="filter-pill active" data-filter="all">All posts</button>
-        <button class="filter-pill" data-filter="thoughts">Thoughts</button>
-        <button class="filter-pill" data-filter="creative">Creative</button>
-        <button class="filter-pill" data-filter="growth">Growth</button>
+
+      <!-- Search -->
+      <div class="search-wrap reveal d3">
+        <input
+          type="search"
+          id="blog-search"
+          class="search-input"
+          placeholder="search thoughts…"
+          autocomplete="off"
+          aria-label="Search posts"
+        />
+        <span class="search-icon" aria-hidden="true">◎</span>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs reveal d4">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="thoughts">Thoughts</button>
+        <button class="filter-tab" data-filter="anime">Anime</button>
+        <button class="filter-tab" data-filter="coding">Coding</button>
+        <button class="filter-tab" data-filter="stories">Stories</button>
+        <button class="filter-tab" data-filter="life">Life</button>
       </div>
     </div>
   </div>
 
   <div class="container" style="padding-bottom:108px">
-    <div class="blog-grid" id="blog-list-grid">
-      <div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:60px 0;font-size:14px">Loading posts…</div>
+
+    <!-- ══ FEATURED POSTS ══════════════════════════════════════ -->
+    <div id="featured-section" style="margin-bottom:56px">
+      <div class="featured-section-label reveal">Pinned posts</div>
+      <div class="featured-grid" id="featured-grid">
+        <!-- Rendered by JS -->
+      </div>
     </div>
+
+    <!-- ══ ALL POSTS ══════════════════════════════════════════ -->
+    <div class="lbl reveal" style="margin-bottom:24px">All posts</div>
+    <div class="blog-grid" id="blog-list-grid">
+      <div style="grid-column:1/-1;text-align:center;color:var(--text-m);padding:48px 0;font-size:14px">
+        Loading posts…
+      </div>
+    </div>
+
+    <div class="more-wrap" id="more-list-wrap" style="display:none">
+      <button class="btn btn-ghost more-btn" id="more-list-btn">
+        Load more <span class="arrow">↓</span>
+      </button>
+    </div>
+
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-row">
-    <a href="index.html" class="footer-logo">Rash<span>Yaps</span></a>
-    <p class="footer-copy">© 2025 RashYaps. Made with care in the late hours.</p>
-    <div class="footer-socials">
-      <a href="https://youtube.com/@RashYaps" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
-      <a href="https://instagram.com/RashYaps" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
-      <a href="https://twitter.com/RashYaps" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
-      <a href="https://discord.gg/RashYaps" target="_blank" rel="noopener" aria-label="Discord">◈</a>
+    <a href="index.html" class="footer-logo">Rashqyiiiiee</a>
+    <p class="footer-copy">© 2025 Rashqyiiiiee · <span style="color:var(--a-blue)">RashYaps</span></p>
+    <div class="footer-soc">
+      <a href="https://youtube.com/@Rashqyiiiiee"  target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="https://instagram.com/Rashqyiiiiee" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://twitter.com/Rashqyiiiiee"   target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+      <a href="https://discord.gg/Rashqyiiiiee"    target="_blank" rel="noopener" aria-label="Discord">◈</a>
     </div>
   </div>
 </footer>
