@@ -108,18 +108,6 @@
       "featured": false,
       "likes": 94
     }
-    {
-  "id": 999,
-  "title": "THIS IS A TEST POST",
-  "preview": "If this appears, the JSON works.",
-  "content": "<p>Hello world.</p>",
-  "date": "May 20, 2026",
-  "readTime": "1 min read",
-  "category": "thoughts",
-  "tags": ["test"],
-  "featured": true,
-  "likes": 0
-}
   ],
   "projects": [
     {
