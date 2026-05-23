@@ -1,6 +1,18 @@
 {
   "blogs": [
     {
+  "id": 2,
+  "title": "Culture shouldn't only exist for those who can afford it",
+  "preview": "A small thought about art, accessibility, and why creativity should belong to everyone.",
+  "content": "<p>Some of the most beautiful things in the world become invisible once money decides who gets access to them.</p><p>Art, music, stories, films, culture — they should feel human before they feel expensive.</p><p>Maybe the internet once felt magical because it allowed people to create without permission.</p>",
+  "date": "May 20, 2026",
+  "readTime": "2 min read",
+  "category": "thoughts",
+  "tags": ["culture", "writing", "internet"],
+  "featured": true,
+  "likes": 0
+}
+    {
       "id": 1,
       "title": "Why I stopped chasing consistency",
       "preview": "Everyone told me to post every day. I burned out by week three. Here's what I actually learned about rhythm.",
